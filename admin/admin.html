@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Prova</title>
+</head>
+
+<body>
+    <header class="top">
+        <div class="welcome">
+            <fieldset class="h1-wrapper">
+                <h1>Admin Page</h1>
+            </fieldset>
+        </div>
+        <a href="logout.php" class="link">
+            <button type="button" class="logout">Logout</button>
+        </a>
+    </header>
+    <main>
+        <fieldset class="nav-wrap-left">
+            <div class="flexed-titles">
+                <fieldset class="left-title-wrap">
+                    <h2 class="addings">Add Infos</h2>
+                </fieldset>
+            </div>
+
+            <form class="form" id="form_1">
+                <h3>Primary Form:</h3>
+                <input type="text" placeholder="Year" autocomplete="off" class="inputs" name="year" required>
+                <input type="number" placeholder="Teams Amount" autocomplete="off" class="inputs" name="teams" required>
+                <input type="submit" value="Next" class="add-btn">
+            </form>
+        </fieldset>
+
+        <fieldset class="nav-wrap-right">
+            <div class="flexed-titles">
+                <fieldset class="right-title-wrap">
+                    <h2 class="mods">Modify | Delete</h2>
+                </fieldset>
+            </div>
+            <div>
+                <h3>Choose the operation:</h3>
+                <div id="choice-container">
+                    <button type="button" class="right-choice-buttons" id="left-button">Delete</button>
+                    <button type="button" class="right-choice-buttons" id="right-button">Modify</button>
+                </div>
+            </div>
+        </fieldset>
+    </main>
+    <script type="module" src="Js/addings.js"></script>
+    <script type="module" src="Js/remove.js"></script>
+</body>
+
+</html>
